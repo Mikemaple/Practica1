@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var PORT= process.env.PORT||3000;
 
 //ejs
 app.set('view engine', 'ejs');
@@ -23,6 +24,6 @@ app.get('/Contacto', function (req, res) {
 });
 
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log('Example app listening on port 3000!');
 });
